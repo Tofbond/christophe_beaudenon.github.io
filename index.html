@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Christophe BEAUDENON · BTS SIO SISR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== HERO ======== -->
+    <header class="hero">
+        <div class="hero__noise"></div>
+        <div class="hero__grid"></div>
+        <div class="hero__content">
+            <div class="hero__badge">BTS SIO · SISR · E2SE Digit</div>
+            <h1 class="hero__name">Christophe<br>Beaudenon</h1>
+            <p class="hero__sub">Infrastructure · Systèmes · Réseaux · Cybersécurité</p>
+            <div class="hero__cta">
+                <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn--outline">Me contacter</a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint"><span></span></div>
+    </header>
+
+    <!-- ======== NAV ======== -->
+    <nav id="navbar">
+        <div class="nav__inner">
+            <span class="nav__logo">CB<span class="nav__dot">.</span></span>
+            <div class="nav__links">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#exposes">Exposés</a>
+                <a href="#e5">Épreuve E5</a>
+                <a href="#contact">Contact</a>
+                <a href="#" onclick="openModal('modal-stages');return false;" class="nav__link--stages">Stages</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== À PROPOS ======== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section__label">01 — À propos</div>
+            <h2 class="section__title">Futur technicien<br><em>réseau &amp; sécurité</em></h2>
+
+            <!-- Profil rapide -->
+            <div class="about__top">
+                <div class="about__profil">
+                    <p>
+                        Étudiant en <strong>BTS SIO option SISR</strong> en recherche d'alternance pour ma 2ème année (2026-2027). Fort d'une expérience terrain acquise lors de mes stages (IRFA Formation, APHP La Pitié-Salpêtrière), je maîtrise le support utilisateur, la maintenance du parc informatique et la gestion d'infrastructure réseau.
+                    </p>
+                    <p>
+                        Mon parcours atypique (management, dessin industriel) m'a forgé rigueur, sens du service et adaptabilité. <strong>Autonome et rapidement opérationnel.</strong>
+                    </p>
+                    <div class="about__contact-inline">
+                        <a href="mailto:christophe_beaudenon@yahoo.fr" class="inline-contact">✉ christophe_beaudenon@yahoo.fr</a>
+                        <span class="inline-contact">📱 06.11.79.26.16</span>
+                        <span class="inline-contact">📍 Lanquetot (76)</span>
+                        <span class="inline-contact">🚗 Permis B + Véhicule</span>
+                    </div>
+                </div>
+                <div class="about__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__num">2</div>
+                        <div class="stat-card__label">Ans de formation</div>
+                    </div>
+                    <div class="stat-card stat-card--btn" onclick="openModal('modal-stages')" title="Voir le détail des stages">
+                        <div class="stat-card__num">2</div>
+                        <div class="stat-card__label">Stages effectués</div>
+                        <div class="stat-card__cta">Voir le détail →</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__num">SISR</div>
+                        <div class="stat-card__label">Option spécialisée</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs CV -->
+            <div class="cv-tabs">
+                <div class="cv-tabs__nav">
+                    <button class="cv-tab-btn active" data-tab="experiences">Expériences</button>
+                    <button class="cv-tab-btn" data-tab="formation">Formation</button>
+                    <button class="cv-tab-btn" data-tab="competences">Compétences</button>
+                </div>
+
+                <!-- Expériences -->
+                <div class="cv-tab-content active" id="tab-experiences">
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">Juin – Juill. 2026</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">Technicien informatique – Stage</div>
+                                <div class="timeline-item__company">APHP La Pitié-Salpêtrière · Paris (75)</div>
+                                <ul>
+                                    <li>Support utilisateur et gestion du parc informatique en milieu hospitalier</li>
+                                    <li>Intervention sur incidents, configuration d'équipements réseau</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">Oct. 2025 – Fév. 2026</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">Technicien informatique – Stage</div>
+                                <div class="timeline-item__company">IRFA Formation · Hérouville-Saint-Clair (14)</div>
+                                <ul>
+                                    <li>Gestion du patrimoine informatique et réponse aux incidents (GLPI)</li>
+                                    <li>Masterisation de PC stagiaires et gestion des postes administratifs (Windows 10/11)</li>
+                                    <li>Exploitation, dépannage et supervision d'une infrastructure réseau</li>
+                                    <li>Sécurisation des équipements et sensibilisation des utilisateurs</li>
+                                    <li>Support sur environnement MacOS pour le service communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">Sept. 2010 – Août 2025</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">Chef de rayon / Vendeur conseil</div>
+                                <div class="timeline-item__company">Truffaut · Saint-Maximin (60)</div>
+                                <ul>
+                                    <li>Supervision et formation d'équipes de vente (5 à 8 personnes)</li>
+                                    <li>Gestion des stocks, relation client, normes qualité ISO 9001:2015</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">Févr. 2001 – Déc. 2008</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">Dessinateur industriel mécanique</div>
+                                <div class="timeline-item__company">Normandie / Bordeaux</div>
+                                <ul>
+                                    <li>Modélisation 3D (CATIA V5, SolidWorks, AutoCAD), plans d'ensemble et de détails</li>
+                                    <li>Collaboration avec équipes d'ingénierie, clients et fournisseurs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation -->
+                <div class="cv-tab-content" id="tab-formation">
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">2025 → 2027</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">BTS SIO – Option SISR <span class="badge-encours">En cours</span></div>
+                                <div class="timeline-item__company">E2SE Digit · Caen (14)</div>
+                                <ul>
+                                    <li>Administration systèmes et réseaux, cybersécurité, support technique</li>
+                                    <li>Déploiement et optimisation de solutions d'infrastructure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">1999</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">DUT Génie Mécanique et Productique</div>
+                                <div class="timeline-item__company">IUT d'Orléans</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-item__date">1996</div>
+                            <div class="timeline-item__body">
+                                <div class="timeline-item__title">Baccalauréat S – option T.I.</div>
+                                <div class="timeline-item__company">Lycée Durzy · Villemandeur (45)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétences -->
+                <div class="cv-tab-content" id="tab-competences">
+                    <div class="cv-skills-grid">
+                        <div class="cv-skill-chip reveal">Windows 10/11</div>
+                        <div class="cv-skill-chip reveal">MacOS</div>
+                        <div class="cv-skill-chip reveal">Réseaux TCP/IP</div>
+                        <div class="cv-skill-chip reveal">GLPI</div>
+                        <div class="cv-skill-chip reveal">Cybersécurité</div>
+                        <div class="cv-skill-chip reveal">Python / SQL</div>
+                        <div class="cv-skill-chip reveal">Active Directory</div>
+                        <div class="cv-skill-chip reveal">3CX / Office 365</div>
+                        <div class="cv-skill-chip reveal">Windows Server</div>
+                        <div class="cv-skill-chip reveal">Linux</div>
+                        <div class="cv-skill-chip reveal">VMware / VirtualBox</div>
+                        <div class="cv-skill-chip reveal">Cisco IOS</div>
+                    </div>
+                    <div class="cv-extras">
+                        <div class="cv-extra-block reveal">
+                            <div class="cv-extra-block__title">🌐 Langue</div>
+                            <p>Anglais – niveau intermédiaire (B1)</p>
+                        </div>
+                        <div class="cv-extra-block reveal">
+                            <div class="cv-extra-block__title">🎯 Centres d'intérêt</div>
+                            <p>World of Warcraft (GM depuis 15 ans) · Aquariophilie · Bonsaïs · Mangas · Modélisme</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======== COMPÉTENCES ======== -->
+    <section id="skills" class="section section--dark">
+        <div class="container">
+            <div class="section__label">02 — Compétences</div>
+            <h2 class="section__title">Stack technique</h2>
+            <div class="skills__grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">⬡</div>
+                    <h3>Systèmes</h3>
+                    <ul>
+                        <li>Windows Server 2019/2022</li>
+                        <li>Active Directory &amp; GPO</li>
+                        <li>Linux (Debian, Ubuntu)</li>
+                        <li>DHCP / DNS / NTP</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">◈</div>
+                    <h3>Réseaux</h3>
+                    <ul>
+                        <li>TCP/IP, VLAN, 802.1Q</li>
+                        <li>Routage inter-VLAN</li>
+                        <li>Cisco IOS / Packet Tracer</li>
+                        <li>Firewall &amp; ACL</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">◬</div>
+                    <h3>Virtualisation</h3>
+                    <ul>
+                        <li>VMware Workstation</li>
+                        <li>VirtualBox</li>
+                        <li>Hyper-V</li>
+                        <li>Snapshots &amp; clones</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">⬢</div>
+                    <h3>Cybersécurité</h3>
+                    <ul>
+                        <li>Gestion des droits &amp; ACL</li>
+                        <li>Politique de sauvegardes</li>
+                        <li>Supervision réseau</li>
+                        <li>Hardening système</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PROJETS ======== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section__label">03 — Projets</div>
+            <h2 class="section__title">Réalisations</h2>
+            <div class="projects__grid">
+                <article class="project-card reveal">
+                    <div class="project-card__header">
+                        <span class="project-card__num">01</span>
+                        <span class="project-card__type">Infrastructure</span>
+                    </div>
+                    <h3>Active Directory</h3>
+                    <p>Mise en place d'un domaine Windows Server avec gestion des utilisateurs, groupes et stratégies GPO.</p>
+                    <div class="project-card__tech">
+                        <span>Windows Server 2022</span>
+                        <span>AD DS</span>
+                        <span>GPO</span>
+                    </div>
+                    <button class="project-card__btn" onclick="openModal('modal-ad')">Voir le détail →</button>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-card__header">
+                        <span class="project-card__num">02</span>
+                        <span class="project-card__type">Réseau</span>
+                    </div>
+                    <h3>VLAN &amp; Routage</h3>
+                    <p>Configuration de VLANs sur switch Cisco avec routage inter-VLAN et segmentation réseau.</p>
+                    <div class="project-card__tech">
+                        <span>Cisco IOS</span>
+                        <span>VLAN 802.1Q</span>
+                        <span>Routage</span>
+                    </div>
+                    <button class="project-card__btn" onclick="openModal('modal-vlan')">Voir le détail →</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== EXPOSÉS ======== -->
+    <section id="exposes" class="section">
+        <div class="container">
+            <div class="section__label">04 — Exposés techniques</div>
+            <h2 class="section__title">Présentations</h2>
+
+            <div class="exposes__grid">
+
+                <!-- Carte exposé FTP -->
+                <div class="expose-card reveal" onclick="openExpose('ftp')">
+                    <div class="expose-card__thumb">
+                        <div class="expose-card__slide-preview">
+                            <div class="slide-mini slide-mini--title">
+                                <span class="slide-mini__title">Le protocole</span>
+                                <span class="slide-mini__accent">FTP</span>
+                            </div>
+                        </div>
+                        <div class="expose-card__overlay">
+                            <span>Voir la présentation →</span>
+                        </div>
+                    </div>
+                    <div class="expose-card__info">
+                        <div class="expose-card__meta">
+                            <span class="expose-card__tag">Réseau</span>
+                            <span class="expose-card__slides">8 slides</span>
+                        </div>
+                        <h3>Le protocole FTP</h3>
+                        <p>Architecture client/serveur, modes actif/passif, FileZilla, comparaison FTP / FTPS / SFTP.</p>
+                    </div>
+                </div>
+
+                <!-- Carte exposé VoIP (placeholder) -->
+                <div class="expose-card reveal" onclick="openExpose('voip')" style="cursor:pointer">
+                    <div class="expose-card__thumb">
+                        <div class="expose-card__slide-preview">
+                            <div class="slide-mini slide-mini--voip">
+                                <span class="slide-mini__title">La</span>
+                                <span class="slide-mini__accent">VoIP</span>
+                            </div>
+                        </div>
+                        <div class="expose-card__overlay" onclick="openExpose('voip')"><span>Voir la présentation →</span></div>
+                    </div>
+                    <div class="expose-card__info">
+                        <div class="expose-card__meta">
+                            <span class="expose-card__tag">Téléphonie</span>
+                        </div>
+                        <h3>La VoIP</h3>
+                        <p>Voice over IP — protocoles SIP, RTP, codecs audio, infrastructure téléphonie IP.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== MODAL VIEWER FTP ======== -->
+    <div id="expose-ftp" class="modal expose-modal" onclick="closeModal(event, this)">
+        <div class="modal__box expose-modal__box">
+            <button class="modal__close" onclick="document.getElementById('expose-ftp').classList.remove('active')">✕</button>
+            <div class="slideshow" id="slideshow-ftp">
+                <div class="slideshow__header">
+                    <span class="slideshow__title">Le protocole FTP</span>
+                    <span class="slideshow__counter"><span id="ftp-current">1</span> / 8</span>
+                </div>
+                <div class="slideshow__track" id="ftp-track">
+
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="slide__body slide__body--cover">
+                            <h2 class="slide__big-title">Le protocole <span>FTP</span></h2>
+                            <div class="slide__diagram">
+                                <div class="slide__diag-box">🖥️ Web Server</div>
+                                <div class="slide__diag-arrows">
+                                    <span>→ FTP →</span>
+                                    <span>← FTP ←</span>
+                                </div>
+                                <div class="slide__diag-box">💻 Your Computer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Définition / Utilisation</h3>
+                            <div class="slide__content">
+                                <p>Le <strong>File Transfer Protocol</strong> (protocole de transfert de fichiers) est un protocole de communication dédié à l'échange de fichiers sur un réseau TCP/IP.</p>
+                                <ul>
+                                    <li>Permet de copier des fichiers depuis ou vers un autre ordinateur du réseau</li>
+                                    <li>Utilisé pour administrer un site web</li>
+                                    <li>La variante sécurisée avec SSL/TLS s'appelle <strong>FTPS</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Architecture FTP (Client / Serveur)</h3>
+                            <div class="slide__two-col">
+                                <div class="slide__col-box slide__col-box--orange">
+                                    <strong>Client FTP</strong><br>(ex: FileZilla)
+                                </div>
+                                <div class="slide__col-box slide__col-box--orange">
+                                    <strong>Serveur FTP</strong><br>Stockage des fichiers
+                                </div>
+                            </div>
+                            <div class="slide__two-col slide__two-col--text">
+                                <div>
+                                    <p><strong>Le Client FTP</strong></p>
+                                    <p>Logiciel installé sur l'ordinateur de l'utilisateur. Permet de transférer, supprimer ou modifier des fichiers sur le serveur.</p>
+                                </div>
+                                <div>
+                                    <p><strong>Le Serveur FTP</strong></p>
+                                    <p>Stocke et centralise les fichiers. Permet la modification des données à distance via une connexion entrante.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">FTP Mode actif ou passif</h3>
+                            <div class="slide__mode-grid">
+                                <div class="slide__mode-card">
+                                    <div class="slide__mode-label">Mode actif</div>
+                                    <p>C'est le <strong>client FTP</strong> qui détermine le port de connexion à utiliser pour le transfert des données.</p>
+                                    <div class="slide__port-row"><span class="port-badge">Port 21</span><span class="port-badge">Port 20</span></div>
+                                </div>
+                                <div class="slide__mode-card slide__mode-card--accent">
+                                    <div class="slide__mode-label">Mode passif ✓</div>
+                                    <p>Le <strong>serveur FTP</strong> détermine lui-même le port. Plus utilisé aujourd'hui, fonctionne mieux avec les pare-feu.</p>
+                                    <div class="slide__port-row"><span class="port-badge">Port 21</span><span class="port-badge">High Port</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Exemple de client FTP : FileZilla</h3>
+                            <div class="slide__content">
+                                <ul>
+                                    <li><strong>Logiciel</strong> très utilisé pour gérer les transferts FTP</li>
+                                    <li><strong>Connexion</strong> avec hôte, identifiant, mot de passe et port</li>
+                                    <li><strong>Interface</strong> : fichiers locaux à gauche / serveur à droite</li>
+                                    <li><strong>Transfert</strong> de fichiers par glisser-déposer</li>
+                                </ul>
+                                <div class="slide__filezilla-mock">
+                                    <div class="fz-pane">
+                                        <div class="fz-pane__header">Local site: /john/websites/</div>
+                                        <div class="fz-pane__item">📁 example.com</div>
+                                        <div class="fz-pane__item">📁 example.org</div>
+                                        <div class="fz-pane__item fz-pane__item--file">📄 index.html</div>
+                                    </div>
+                                    <div class="fz-arrow">⇄</div>
+                                    <div class="fz-pane">
+                                        <div class="fz-pane__header">Remote site: /var/www/</div>
+                                        <div class="fz-pane__item">📁 www</div>
+                                        <div class="fz-pane__item fz-pane__item--sel">📁 example.org</div>
+                                        <div class="fz-pane__item fz-pane__item--file">📄 index.html</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Avantages et inconvénients</h3>
+                            <div class="slide__pros-cons">
+                                <div class="slide__pros">
+                                    <div class="slide__pros-title">✓ Avantages</div>
+                                    <ul>
+                                        <li>Simple à utiliser</li>
+                                        <li>Très répandu dans l'administration serveur</li>
+                                    </ul>
+                                </div>
+                                <div class="slide__cons">
+                                    <div class="slide__cons-title">✗ Inconvénients</div>
+                                    <ul>
+                                        <li>FTP classique n'est pas sécurisé</li>
+                                        <li>Souvent remplacé par FTPS ou SFTP aujourd'hui</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Comparaison : FTP / FTPS / SFTP</h3>
+                            <div class="slide__compare">
+                                <div class="slide__compare-item slide__compare-item--gray">
+                                    <div class="slide__compare-name">FTP</div>
+                                    <div class="slide__compare-desc">Protocole historique, non sécurisé</div>
+                                    <div class="slide__compare-port">Port 21 / 20</div>
+                                </div>
+                                <div class="slide__compare-item slide__compare-item--orange">
+                                    <div class="slide__compare-name">FTPS</div>
+                                    <div class="slide__compare-desc">FTP avec chiffrement SSL/TLS</div>
+                                    <div class="slide__compare-port">Port 21 / 990</div>
+                                </div>
+                                <div class="slide__compare-item slide__compare-item--blue">
+                                    <div class="slide__compare-name">SFTP</div>
+                                    <div class="slide__compare-desc">Protocole basé sur SSH</div>
+                                    <div class="slide__compare-port">Port 22</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="slide">
+                        <div class="slide__body slide__body--conclusion">
+                            <h3 class="slide__title">Conclusion</h3>
+                            <ul class="slide__conclusion-list">
+                                <li>FTP est un protocole important dans l'histoire d'Internet</li>
+                                <li>Il permet de transférer des fichiers entre un client et un serveur</li>
+                                <li>Pour la sécurité, on utilise plutôt <strong>FTPS</strong> ou <strong>SFTP</strong></li>
+                            </ul>
+                            <div class="slide__sources">Sources : IT-Connect · FileZilla · Fortinet</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slideshow__controls">
+                    <button class="slide-btn" id="ftp-prev" onclick="changeSlide('ftp', -1)">← Précédent</button>
+                    <div class="slideshow__dots" id="ftp-dots"></div>
+                    <button class="slide-btn slide-btn--primary" id="ftp-next" onclick="changeSlide('ftp', 1)">Suivant →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== ÉPREUVE E5 ======== -->
+    <section id="e5" class="section section--dark">
+        <div class="container">
+            <div class="section__label">05 — Certification</div>
+            <h2 class="section__title">Épreuve E5</h2>
+            <p class="section__intro">Support et mise à disposition de services informatiques</p>
+            <div class="e5__layout">
+                <div class="e5__info">
+                    <div class="e5-block reveal">
+                        <h3>Contexte professionnel</h3>
+                        <p>Mise en situation professionnelle réalisée dans le cadre du BTS SIO SISR. L'objectif était de répondre à un besoin client en mettant en place une infrastructure réseau sécurisée et fonctionnelle.</p>
+                    </div>
+                    <div class="e5-block reveal">
+                        <h3>Environnement technique</h3>
+                        <p>Windows Server 2022, Active Directory, GPO, VLAN, Switch Cisco, Virtualisation (VMware / VirtualBox).</p>
+                    </div>
+                </div>
+                <div class="e5__competences reveal">
+                    <h3>Compétences mobilisées</h3>
+                    <ul class="competences-list">
+                        <li><span class="check">✓</span> Analyser les besoins d'une organisation</li>
+                        <li><span class="check">✓</span> Installer et configurer un serveur</li>
+                        <li><span class="check">✓</span> Mettre en place des services réseau (DHCP, DNS, AD)</li>
+                        <li><span class="check">✓</span> Sécuriser l'infrastructure</li>
+                        <li><span class="check">✓</span> Rédiger une documentation technique</li>
+                    </ul>
+                    <div class="e5__docs">
+                        <button class="btn btn--primary" onclick="openModal('modal-e5')">Télécharger le dossier E5</button>
+                        <button class="btn btn--outline" onclick="openModal('modal-doc')">Voir la documentation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section__label">06 — Contact</div>
+            <h2 class="section__title">Me contacter</h2>
+            <div class="contact__grid">
+                <a href="mailto:christophe_beaudenon@yahoo.fr" class="contact-card reveal">
+                    <div class="contact-card__icon">@</div>
+                    <div>
+                        <div class="contact-card__label">Email</div>
+                        <div class="contact-card__value">christophe_beaudenon@yahoo.fr</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/christophe-beaudenon-a62689166/" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">in</div>
+                    <div>
+                        <div class="contact-card__label">LinkedIn</div>
+                        <div class="contact-card__value">Christophe Beaudenon</div>
+                    </div>
+                </a>
+                <a href="https://github.com/votreprofil" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">&lt;/&gt;</div>
+                    <div>
+                        <div class="contact-card__label">GitHub</div>
+                        <div class="contact-card__value">github.com/votreprofil</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <span>© 2026 — Christophe Beaudenon · BTS SIO SISR · E2SE Digit</span>
+        </div>
+    </footer>
+
+    <!-- ======== MODALS PROJETS ======== -->
+    <div id="modal-ad" class="modal" onclick="closeModal(event, this)">
+        <div class="modal__box">
+            <button class="modal__close" onclick="document.getElementById('modal-ad').classList.remove('active')">&#x2715;</button>
+            <h2>Infrastructure Active Directory</h2>
+            <p>Mise en place complète d'un domaine Windows Server 2022 incluant :</p>
+            <ul>
+                <li>Installation et promotion du contrôleur de domaine</li>
+                <li>Création de l'arborescence OU (Unités d'Organisation)</li>
+                <li>Gestion des utilisateurs et groupes de sécurité</li>
+                <li>Déploiement de GPO (stratégies de groupe)</li>
+                <li>Configuration du DNS et DHCP intégrés</li>
+            </ul>
+            <p><em>Documentation disponible sur demande.</em></p>
+        </div>
+    </div>
+    <div id="modal-vlan" class="modal" onclick="closeModal(event, this)">
+        <div class="modal__box">
+            <button class="modal__close" onclick="document.getElementById('modal-vlan').classList.remove('active')">&#x2715;</button>
+            <h2>Déploiement Réseau VLAN</h2>
+            <p>Configuration d'une infrastructure réseau segmentée :</p>
+            <ul>
+                <li>Création et nommage des VLANs sur switch Cisco</li>
+                <li>Configuration des ports trunk et access (802.1Q)</li>
+                <li>Routage inter-VLAN sur routeur Cisco</li>
+                <li>Tests de connectivité et isolation des flux</li>
+                <li>Documentation technique avec schéma réseau</li>
+            </ul>
+            <p><em>Réalisé sous Packet Tracer et en environnement réel.</em></p>
+        </div>
+    </div>
+    <div id="modal-e5" class="modal" onclick="closeModal(event, this)">
+        <div class="modal__box">
+            <button class="modal__close" onclick="document.getElementById('modal-e5').classList.remove('active')">&#x2715;</button>
+            <h2>Dossier E5</h2>
+            <p>Le dossier complet sera disponible au téléchargement prochainement. Contactez-moi par email pour y accéder dès maintenant.</p>
+            <a href="mailto:christophe_beaudenon@yahoo.fr" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Demander le dossier</a>
+        </div>
+    </div>
+    <div id="modal-doc" class="modal" onclick="closeModal(event, this)">
+        <div class="modal__box">
+            <button class="modal__close" onclick="document.getElementById('modal-doc').classList.remove('active')">&#x2715;</button>
+            <h2>Documentation technique</h2>
+            <p>La documentation technique complète sera mise en ligne prochainement. N'hésitez pas à me contacter pour plus d'informations.</p>
+            <a href="mailto:christophe_beaudenon@yahoo.fr" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Me contacter</a>
+        </div>
+    </div>
+
+    <!-- ======== MODAL STAGES ======== -->
+    <div id="modal-stages" class="modal" onclick="closeModal(event, this)">
+        <div class="modal__box modal__box--stages">
+            <button class="modal__close" onclick="document.getElementById('modal-stages').classList.remove('active')">&#x2715;</button>
+            <h2>Mes stages</h2>
+            <div class="stage-tabs">
+                <button class="stage-tab-btn active" onclick="switchStage(this, 'aphp')">APHP La Pitié-Salpêtrière</button>
+                <button class="stage-tab-btn" onclick="switchStage(this, 'irfa')">IRFA Formation</button>
+            </div>
+            <div class="stage-content active" id="stage-aphp">
+                <div class="stage-header">
+                    <div class="stage-header__info">
+                        <div class="stage-header__title">Technicien informatique – Stage conventionné</div>
+                        <div class="stage-header__company">APHP La Pitié-Salpêtrière · Paris (75)</div>
+                        <div class="stage-header__date">Juin 2026 → Juillet 2026</div>
+                    </div>
+                    <span class="stage-header__badge">Milieu hospitalier</span>
+                </div>
+                <div class="stage-body">
+                    <div class="stage-section">
+                        <h4>Missions réalisées</h4>
+                        <ul>
+                            <li>Support utilisateur et gestion du parc informatique en milieu hospitalier</li>
+                            <li>Intervention sur incidents, configuration d'équipements réseau</li>
+                        </ul>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Environnement technique</h4>
+                        <p class="stage-placeholder">✏️ À compléter — outils, logiciels et matériels utilisés durant ce stage.</p>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Compétences acquises</h4>
+                        <p class="stage-placeholder">✏️ À compléter — compétences développées et situations professionnelles rencontrées.</p>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Bilan personnel</h4>
+                        <p class="stage-placeholder">✏️ À compléter — ton ressenti et ce que ce stage t'a apporté.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stage-content" id="stage-irfa">
+                <div class="stage-header">
+                    <div class="stage-header__info">
+                        <div class="stage-header__title">Technicien informatique – Stage conventionné</div>
+                        <div class="stage-header__company">IRFA Formation · Hérouville-Saint-Clair (14)</div>
+                        <div class="stage-header__date">Octobre 2025 → Février 2026</div>
+                    </div>
+                    <span class="stage-header__badge">Centre de formation</span>
+                </div>
+                <div class="stage-body">
+                    <div class="stage-section">
+                        <h4>Missions réalisées</h4>
+                        <ul>
+                            <li>Gestion du patrimoine informatique et réponse aux incidents (GLPI)</li>
+                            <li>Masterisation de PC stagiaires et gestion des postes administratifs (Windows 10/11)</li>
+                            <li>Exploitation, dépannage et supervision d'une infrastructure réseau</li>
+                            <li>Sécurisation des équipements et sensibilisation des utilisateurs</li>
+                            <li>Support MacOS pour le service communication et optimisation des postes</li>
+                        </ul>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Environnement technique</h4>
+                        <p class="stage-placeholder">✏️ À compléter — outils, logiciels et matériels utilisés durant ce stage.</p>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Compétences acquises</h4>
+                        <p class="stage-placeholder">✏️ À compléter — compétences développées et situations professionnelles rencontrées.</p>
+                    </div>
+                    <div class="stage-section stage-section--placeholder">
+                        <h4>Bilan personnel</h4>
+                        <p class="stage-placeholder">✏️ À compléter — ton ressenti et ce que ce stage t'a apporté.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== MODAL VIEWER FTP ======== -->
+    <div id="expose-ftp" class="modal expose-modal" onclick="closeModal(event, this)">
+        <div class="modal__box expose-modal__box">
+            <button class="modal__close" onclick="document.getElementById('expose-ftp').classList.remove('active')">&#x2715;</button>
+            <div class="slideshow" id="slideshow-ftp">
+                <div class="slideshow__header">
+                    <span class="slideshow__title">Le protocole FTP</span>
+                    <span class="slideshow__counter"><span id="ftp-current">1</span> / 8</span>
+                </div>
+                <div class="slideshow__track" id="ftp-track">
+                    <div class="slide active">
+                        <div class="slide__body slide__body--cover">
+                            <h2 class="slide__big-title">Le protocole <span>FTP</span></h2>
+                            <div class="slide__diagram">
+                                <div class="slide__diag-box">&#x1F5A5;&#xFE0F; Web Server</div>
+                                <div class="slide__diag-arrows"><span>&#x2192; FTP &#x2192;</span><span>&#x2190; FTP &#x2190;</span></div>
+                                <div class="slide__diag-box">&#x1F4BB; Your Computer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Définition / Utilisation</h3>
+                            <div class="slide__content">
+                                <p>Le <strong>File Transfer Protocol</strong> est un protocole de communication dédié à l'échange de fichiers sur un réseau TCP/IP.</p>
+                                <ul>
+                                    <li>Permet de copier des fichiers depuis ou vers un autre ordinateur du réseau</li>
+                                    <li>Utilisé pour administrer un site web</li>
+                                    <li>La variante sécurisée avec SSL/TLS s'appelle <strong>FTPS</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Architecture FTP (Client / Serveur)</h3>
+                            <div class="slide__two-col">
+                                <div class="slide__col-box slide__col-box--orange"><strong>Client FTP</strong><br>(ex: FileZilla)</div>
+                                <div class="slide__col-box slide__col-box--orange"><strong>Serveur FTP</strong><br>Stockage des fichiers</div>
+                            </div>
+                            <div class="slide__two-col slide__two-col--text">
+                                <div><p><strong>Le Client FTP</strong></p><p>Logiciel installé sur l'ordinateur de l'utilisateur. Permet de transférer, supprimer ou modifier des fichiers sur le serveur.</p></div>
+                                <div><p><strong>Le Serveur FTP</strong></p><p>Stocke et centralise les fichiers. Permet la modification des données à distance via une connexion entrante.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">FTP Mode actif ou passif</h3>
+                            <div class="slide__mode-grid">
+                                <div class="slide__mode-card">
+                                    <div class="slide__mode-label">Mode actif</div>
+                                    <p>C'est le <strong>client FTP</strong> qui détermine le port de connexion pour le transfert des données.</p>
+                                    <div class="slide__port-row"><span class="port-badge">Port 21</span><span class="port-badge">Port 20</span></div>
+                                </div>
+                                <div class="slide__mode-card slide__mode-card--accent">
+                                    <div class="slide__mode-label">Mode passif ✓</div>
+                                    <p>Le <strong>serveur FTP</strong> détermine lui-même le port. Fonctionne mieux avec les pare-feu.</p>
+                                    <div class="slide__port-row"><span class="port-badge">Port 21</span><span class="port-badge">High Port</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Exemple de client FTP : FileZilla</h3>
+                            <div class="slide__content">
+                                <ul>
+                                    <li><strong>Logiciel</strong> très utilisé pour gérer les transferts FTP</li>
+                                    <li><strong>Connexion</strong> avec hôte, identifiant, mot de passe et port</li>
+                                    <li><strong>Interface</strong> : fichiers locaux à gauche / serveur à droite</li>
+                                    <li><strong>Transfert</strong> de fichiers par glisser-déposer</li>
+                                </ul>
+                                <div class="slide__filezilla-mock">
+                                    <div class="fz-pane"><div class="fz-pane__header">Local: /john/websites/</div><div class="fz-pane__item">&#x1F4C1; example.com</div><div class="fz-pane__item">&#x1F4C1; example.org</div><div class="fz-pane__item fz-pane__item--file">&#x1F4C4; index.html</div></div>
+                                    <div class="fz-arrow">&#x21C4;</div>
+                                    <div class="fz-pane"><div class="fz-pane__header">Remote: /var/www/</div><div class="fz-pane__item">&#x1F4C1; www</div><div class="fz-pane__item fz-pane__item--sel">&#x1F4C1; example.org</div><div class="fz-pane__item fz-pane__item--file">&#x1F4C4; index.html</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Avantages et inconvénients</h3>
+                            <div class="slide__pros-cons">
+                                <div class="slide__pros"><div class="slide__pros-title">&#x2713; Avantages</div><ul><li>Simple à utiliser</li><li>Très répandu dans l'administration serveur</li></ul></div>
+                                <div class="slide__cons"><div class="slide__cons-title">&#x2717; Inconvénients</div><ul><li>FTP classique n'est pas sécurisé</li><li>Souvent remplacé par FTPS ou SFTP aujourd'hui</li></ul></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body">
+                            <h3 class="slide__title">Comparaison : FTP / FTPS / SFTP</h3>
+                            <div class="slide__compare">
+                                <div class="slide__compare-item slide__compare-item--gray"><div class="slide__compare-name">FTP</div><div class="slide__compare-desc">Protocole historique, non sécurisé</div><div class="slide__compare-port">Port 21 / 20</div></div>
+                                <div class="slide__compare-item slide__compare-item--orange"><div class="slide__compare-name">FTPS</div><div class="slide__compare-desc">FTP avec chiffrement SSL/TLS</div><div class="slide__compare-port">Port 21 / 990</div></div>
+                                <div class="slide__compare-item slide__compare-item--blue"><div class="slide__compare-name">SFTP</div><div class="slide__compare-desc">Protocole basé sur SSH</div><div class="slide__compare-port">Port 22</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__body slide__body--conclusion">
+                            <h3 class="slide__title">Conclusion</h3>
+                            <ul class="slide__conclusion-list">
+                                <li>FTP est un protocole important dans l'histoire d'Internet</li>
+                                <li>Il permet de transférer des fichiers entre un client et un serveur</li>
+                                <li>Pour la sécurité, on utilise plutôt <strong>FTPS</strong> ou <strong>SFTP</strong></li>
+                            </ul>
+                            <div class="slide__sources">Sources : IT-Connect · FileZilla · Fortinet</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__controls">
+                    <button class="slide-btn" id="ftp-prev" onclick="changeSlide('ftp', -1)">&#x2190; Précédent</button>
+                    <div class="slideshow__dots" id="ftp-dots"></div>
+                    <button class="slide-btn slide-btn--primary" id="ftp-next" onclick="changeSlide('ftp', 1)">Suivant &#x2192;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== MODAL VIEWER VOIP ======== -->
+    <div id="expose-voip" class="modal expose-modal" onclick="closeModal(event, this)">
+        <div class="modal__box expose-modal__box">
+            <button class="modal__close" onclick="document.getElementById('expose-voip').classList.remove('active')">&#x2715;</button>
+            <div class="slideshow" id="slideshow-voip">
+                <div class="slideshow__header">
+                    <span class="slideshow__title">Téléphonie d'entreprise · VoIP / ToIP / IPBX</span>
+                    <span class="slideshow__counter"><span id="voip-current">1</span> / 10</span>
+                </div>
+                <div class="slideshow__track" id="voip-track">
+                    <div class="slide active">
+                        <div class="slide__body slide__body--cover" style="background:linear-gradient(135deg,#6b1f3a 0%,#c0392b 50%,#e07b20 100%)">
+                            <h2 class="slide__big-title" style="color:#fff">Téléphonie d'entreprise<br><span style="color:#ffd580">VoIP / ToIP / IPBX</span></h2>
+                            <div class="slide__diagram" style="margin-top:20px">
+                                <div class="slide__diag-box">&#x1F4DE; Voix</div>
+                                <div class="slide__diag-box">&#x1F3A5; Vidéo</div>
+                                <div class="slide__diag-box">&#x1F4AC; Messagerie</div>
+                                <div class="slide__diag-box">&#x1F4C1; Transfert</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Téléphonie d'entreprise</h3><div class="slide__content"><p>La téléphonie d'entreprise moderne regroupe bien plus qu'un simple appel vocal :</p><ul><li>Serveurs vocaux, conférences, transfert d'appels</li><li>Musique d'attente, visioconférence, chat en ligne</li><li>Gestion centralisée depuis un poste de travail</li></ul></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Évolution de la téléphonie</h3><div class="slide__mode-grid"><div class="slide__mode-card"><div class="slide__mode-label">&#x1F4DE; Téléphone analogique</div><p>Réseau RTC traditionnel, ligne dédiée, qualité limitée.</p></div><div class="slide__mode-card slide__mode-card--accent" style="border-color:rgba(192,57,43,0.4);background:rgba(192,57,43,0.06)"><div class="slide__mode-label">&#x1F4BB; VoIP / ToIP</div><p>Voix transmise via réseau IP. Multimédia intégré : voix, vidéo, messagerie, fichiers.</p></div></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Réseau collaboratif</h3><div class="slide__content"><p>La VoIP connecte tous les collaborateurs d'une entreprise :</p><ul><li>Communication directe entre postes sans passer par l'extérieur</li><li>Réseaux maillés entre sites distants</li><li>Intégration avec les outils métier (CRM, helpdesk...)</li></ul></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">VoIP — Voice over IP</h3><div class="slide__compare"><div class="slide__compare-item slide__compare-item--gray"><div class="slide__compare-name">Définition</div><div class="slide__compare-desc">Transmettre la voix via des réseaux IP (Internet)</div></div><div class="slide__compare-item slide__compare-item--orange"><div class="slide__compare-name">Appareils</div><div class="slide__compare-desc">PC, tablette, smartphone, téléphone IP</div></div><div class="slide__compare-item slide__compare-item--blue"><div class="slide__compare-name">Réseau</div><div class="slide__compare-desc">Internet ou réseau local d'entreprise</div></div></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Flux multimédias VoIP</h3><div class="slide__content"><p><strong>La VoIP transporte tout type de flux multimédia :</strong></p><div class="slide__two-col"><div><ul><li>&#x1F4DE; <strong>Voix</strong> — appels téléphoniques</li><li>&#x1F3A5; <strong>Vidéo</strong> — visioconférence</li></ul></div><div><ul><li>&#x1F4AC; <strong>Messagerie</strong> instantanée</li><li>&#x1F4C1; <strong>Transfert</strong> de fichiers</li></ul></div></div></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">IPBX — IP Private Branch eXchange</h3><div class="slide__content"><ul><li>Permet la VoIP et donc la téléphonie d'entreprise complète</li><li>Reprend le rôle du standard téléphonique du PABX traditionnel</li><li>Peut être déployé <strong>en local</strong> ou <strong>dans le cloud</strong></li></ul></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Architecture réseau VoIP</h3><div class="slide__mode-grid"><div class="slide__mode-card"><div class="slide__mode-label">&#x1F3E2; Réseau interne</div><p>Téléphones IP, PC, mobiles connectés à l'IPBX via réseau local.</p><div class="slide__port-row"><span class="port-badge">IPBX</span><span class="port-badge">Passerelle VoIP</span></div></div><div class="slide__mode-card slide__mode-card--accent" style="border-color:rgba(192,57,43,0.4);background:rgba(192,57,43,0.06)"><div class="slide__mode-label">&#x1F310; Réseau externe</div><p>L'IPBX route les appels vers Internet ou le RTC selon la destination.</p><div class="slide__port-row"><span class="port-badge">Internet</span><span class="port-badge">RTC</span></div></div></div></div></div>
+                    <div class="slide"><div class="slide__body"><h3 class="slide__title" style="color:#c0392b">Protocoles SIP &amp; RTP</h3><div class="slide__compare"><div class="slide__compare-item slide__compare-item--orange"><div class="slide__compare-name">SIP</div><div class="slide__compare-desc">Session Initiation Protocol — établit et gère les sessions</div><div class="slide__compare-port">Signalisation</div></div><div class="slide__compare-item slide__compare-item--blue"><div class="slide__compare-name">RTP</div><div class="slide__compare-desc">Real-time Transport Protocol — transporte la voix</div><div class="slide__compare-port">Transport audio</div></div><div class="slide__compare-item slide__compare-item--gray"><div class="slide__compare-name">Flux</div><div class="slide__compare-desc">Analogique → Numérique → Transport IP → Analogique</div></div></div></div></div>
+                    <div class="slide"><div class="slide__body slide__body--conclusion"><h3 class="slide__title" style="color:#c0392b">Conclusion</h3><div class="slide__pros-cons"><div class="slide__pros"><div class="slide__pros-title">&#x2713; Avantages</div><ul><li>Économie de coûts</li><li>Simplicité d'implémentation</li><li>Nombreuses fonctionnalités</li></ul></div><div class="slide__cons"><div class="slide__cons-title">&#x2717; Inconvénients</div><ul><li>Dépendance à Internet</li><li>Qualité variable</li><li>Besoin de sécurisation (SIPS/SRTP, VPN, Pare-feu)</li></ul></div></div><div class="slide__sources">Sources : it-connect.fr · hubspot.fr · Cookie connecté (Youtube)</div></div></div>
+                </div>
+                <div class="slideshow__controls">
+                    <button class="slide-btn" id="voip-prev" onclick="changeSlide('voip', -1)">&#x2190; Précédent</button>
+                    <div class="slideshow__dots" id="voip-dots"></div>
+                    <button class="slide-btn slide-btn--primary" id="voip-next" onclick="changeSlide('voip', 1)">Suivant &#x2192;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
