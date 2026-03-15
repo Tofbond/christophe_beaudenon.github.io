@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Christophe BEAUDENON · BTS SIO SISR</title>
+    <title>EN COURS DE REDACTION / MODIFICATION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -25,7 +26,14 @@
             </div>
         </div>
         <div class="hero__scroll-hint"><span></span></div>
-        <div class="hero__school-banner"><img src="banniere_e2se.png" alt="E2SE Digital IT"></div>
+        <div class="hero__side">
+            <div class="hero__photo">
+                <img src="photo_profil.png" alt="Christophe Beaudenon">
+            </div>
+            <div class="hero__school-banner">
+                <img src="banniere_e2se.png" alt="E2SE Digital IT">
+            </div>
+        </div>
     </header>
 
     <!-- ======== NAV ======== -->
@@ -61,7 +69,7 @@
                         Mon parcours atypique (management, dessin industriel) m'a forgé rigueur, sens du service et adaptabilité. <strong>Autonome et rapidement opérationnel.</strong>
                     </p>
                     <div class="about__contact-inline">
-                        <a href="mailto:christophe_beaudenon@yahoo.fr" class="inline-contact">✉ christophe_beaudenon@yahoo.fr</a>
+                        <a href="/cdn-cgi/l/email-protection#b3d0dbc1dac0c7dcc3dbd6ecd1d6d2c6d7d6dddcddf3cad2dbdcdc9dd5c1" class="inline-contact">✉ <span class="__cf_email__" data-cfemail="a7c4cfd5ced4d3c8d7cfc2f8c5c2c6d2c3c2c9c8c9e7dec6cfc8c889c1d5">[email&#160;protected]</span></a>
                         <span class="inline-contact">📱 06.11.79.26.16</span>
                         <span class="inline-contact">📍 Lanquetot (76)</span>
                         <span class="inline-contact">🚗 Permis B + Véhicule</span>
@@ -351,6 +359,80 @@
         </div>
     </section>
 
+
+    <!-- ======== ÉPREUVE E5 ======== -->
+    <section id="e5" class="section section--dark">
+        <div class="container">
+            <div class="section__label">05 — Certification</div>
+            <h2 class="section__title">Épreuve E5</h2>
+            <p class="section__intro">Support et mise à disposition de services informatiques</p>
+            <div class="e5__layout">
+                <div class="e5__info">
+                    <div class="e5-block reveal">
+                        <h3>Contexte professionnel</h3>
+                        <p>Mise en situation professionnelle réalisée dans le cadre du BTS SIO SISR. L'objectif était de répondre à un besoin client en mettant en place une infrastructure réseau sécurisée et fonctionnelle.</p>
+                    </div>
+                    <div class="e5-block reveal">
+                        <h3>Environnement technique</h3>
+                        <p>Windows Server 2022, Active Directory, GPO, VLAN, Switch Cisco, Virtualisation (VMware / VirtualBox).</p>
+                    </div>
+                </div>
+                <div class="e5__competences reveal">
+                    <h3>Compétences mobilisées</h3>
+                    <ul class="competences-list">
+                        <li><span class="check">✓</span> Analyser les besoins d'une organisation</li>
+                        <li><span class="check">✓</span> Installer et configurer un serveur</li>
+                        <li><span class="check">✓</span> Mettre en place des services réseau (DHCP, DNS, AD)</li>
+                        <li><span class="check">✓</span> Sécuriser l'infrastructure</li>
+                        <li><span class="check">✓</span> Rédiger une documentation technique</li>
+                    </ul>
+                    <div class="e5__docs">
+                        <button class="btn btn--primary" onclick="openModal('modal-e5')">Télécharger le dossier E5</button>
+                        <button class="btn btn--outline" onclick="openModal('modal-doc')">Voir la documentation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section__label">06 — Contact</div>
+            <h2 class="section__title">Me contacter</h2>
+            <div class="contact__grid">
+                <a href="mailto:christophe_beaudenon@yahoo.fr" class="contact-card reveal">
+                    <div class="contact-card__icon">@</div>
+                    <div>
+                        <div class="contact-card__label">Email</div>
+                        <div class="contact-card__value">christophe_beaudenon@yahoo.fr</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/christophe-beaudenon-a62689166/" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">in</div>
+                    <div>
+                        <div class="contact-card__label">LinkedIn</div>
+                        <div class="contact-card__value">Christophe Beaudenon</div>
+                    </div>
+                </a>
+                <a href="https://github.com/votreprofil" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">&lt;/&gt;</div>
+                    <div>
+                        <div class="contact-card__label">GitHub</div>
+                        <div class="contact-card__value">github.com/votreprofil</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <span>© 2026 — Christophe Beaudenon · BTS SIO SISR · E2SE Digit</span>
+        </div>
+    </footer>
+
     <!-- ======== MODALS PROJETS ======== -->
     <div id="modal-ad" class="modal" onclick="closeModal(event, this)">
         <div class="modal__box">
@@ -387,7 +469,7 @@
             <button class="modal__close" onclick="document.getElementById('modal-e5').classList.remove('active')">&#x2715;</button>
             <h2>Dossier E5</h2>
             <p>Le dossier complet sera disponible au téléchargement prochainement.</p>
-            <a href="mailto:christophe_beaudenon@yahoo.fr" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Demander le dossier</a>
+            <a href="/cdn-cgi/l/email-protection#7f1c170d160c0b100f171a201d1a1e0a1b1a1110113f061e17101051190d" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Demander le dossier</a>
         </div>
     </div>
     <div id="modal-doc" class="modal" onclick="closeModal(event, this)">
@@ -395,7 +477,7 @@
             <button class="modal__close" onclick="document.getElementById('modal-doc').classList.remove('active')">&#x2715;</button>
             <h2>Documentation technique</h2>
             <p>La documentation technique complète sera mise en ligne prochainement.</p>
-            <a href="mailto:christophe_beaudenon@yahoo.fr" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Me contacter</a>
+            <a href="/cdn-cgi/l/email-protection#12717a607b61667d627a774d7077736776777c7d7c526b737a7d7d3c7460" class="btn btn--primary" style="margin-top:1rem;display:inline-block">Me contacter</a>
         </div>
     </div>
 
